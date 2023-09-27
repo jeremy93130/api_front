@@ -14,7 +14,26 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>accueil</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="user_list" id="user_list">
+          <!-- Ici on va afficher la liste des utilisateurs -->
+        </div>
+        <div class="message">
+          <div id="discussion"></div>
+          <form id="messageForm">
+            <!-- Formulaire d'envoi de messages -->
+            <input type="text" id="message" placeholder="Tapez votre message" />
+            <button id="action" value="send message">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="/stucture.js"></script>
+  </body>
 </html>
